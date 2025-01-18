@@ -1,50 +1,19 @@
-# React + TypeScript + Vite
+# OMDB Movie Media Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that uses the [OMDb API](http://www.omdbapi.com/) to search for and display detailed information about movies, TV shows, and other media.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search Movies & TV Shows**: Search for movies and TV shows using the OMDb API.
+- **Display Results**: View details such as title, plot, release date, genre, cast, and more.
+- **Interactive UI**: User-friendly interface with smooth transitions and animations.
 
-## Expanding the ESLint configuration
+## Anti Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **No responsiveness**: This is just a basic demo app showcasing react, not CSS, hence not given much emphasis to UI
+- **Noodle Code**: The code is deliberatley structured in a bad way, which is just meant to implement the desired functionality.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Preview
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![App Demo](main/github-assets/omdb-demo.gif)
